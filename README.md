@@ -6,7 +6,7 @@
 
 </h2>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=ㅤ+𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐏𝐑𝐈𝐒𝐇𝐔+𝐌𝐔𝐒𝐈𝐂+𝐑𝐄𝐏𝐎;ㅤ+𝚃𝙷𝙸𝚂+𝙸𝚂+𝙰+𝙰𝙳𝚅𝙰𝙽𝙲𝙴+𝙼𝚄𝚂𝙸𝙲+𝙱𝙾𝚃+🔥;𝙿𝙾𝚆𝙴𝚁𝙴𝙳+𝙱𝚈+☞+𝗠𝗔𝗛𝗧𝗢+𝗔𝗡𝗝𝗔𝗟𝗜+🇧 🇦 🇧 🇾 +😈)](https://github.com/MAHTO-ANJALI/PRISHUMUSIC)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=ㅤ+𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐏𝐑𝐈𝐒𝐇𝐔+𝐌𝐔𝐒𝐈𝐂+𝐑𝐄𝐏𝐎;ㅤ+𝚃𝙷𝙸𝚂+𝙸𝚂+𝙰+𝙰𝙳𝚅𝙰𝙽𝙲𝙴+𝙼𝚄𝚂𝙸𝙲+𝙱𝙾𝚃+🔥;𝙿𝙾𝚆𝙴𝚁𝙴𝙳+𝙱𝚈+☞+𝗠𝗔𝗛𝗧𝗢+𝗔𝗡𝗝𝗔𝗟𝗜+🇧 🇦 🇧 🇾 +😈)](https://github.com/MAHTO-ANJALI/PRISHUTESTING)
 
 
 
@@ -29,4 +29,4 @@
 </h3>
 
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/MAHTO-ANJALI/PRISHUMUSIC"> <img src="https://graph.org/file/7758e15f135e166b8637d.jpg" width="520" height="198.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/MAHTO-ANJALI/PRISHUTESTING"> <img src="https://graph.org/file/7758e15f135e166b8637d.jpg" width="520" height="198.45"/></a></p>
