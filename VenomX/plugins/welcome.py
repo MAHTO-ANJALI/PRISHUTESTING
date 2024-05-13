@@ -29,15 +29,15 @@ import Database.sql.welcome_sql as sql
 from Database.mongodb.toggle_mongo import dwelcome_off, dwelcome_on, is_dwelcome_on
 from Database.sql.global_bans_sql import is_user_gbanned
 from Infamous.temp import temp
-from Mikobot import DEV_USERS
-from Mikobot import DEV_USERS as SUDO
-from Mikobot import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, app, dispatcher, function
-from Mikobot.plugins.helper_funcs.chat_status import check_admin, is_user_ban_protected
-from Mikobot.plugins.helper_funcs.misc import build_keyboard, revert_buttons
-from Mikobot.plugins.helper_funcs.msg_types import get_welcome_type
-from Mikobot.plugins.helper_funcs.string_handling import escape_invalid_curly_brackets
-from Mikobot.plugins.log_channel import loggable
-from Mikobot.utils.can_restrict import can_restrict
+from VenomX import DEV_USERS
+from VenomX import DEV_USERS as SUDO
+from VenomX import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, app, dispatcher, function
+from VenomX.plugins.helper_funcs.chat_status import check_admin, is_user_ban_protected
+from VenomX.plugins.helper_funcs.misc import build_keyboard, revert_buttons
+from VenomX.plugins.helper_funcs.msg_types import get_welcome_type
+from VenomX.plugins.helper_funcs.string_handling import escape_invalid_curly_brackets
+from VenomX.plugins.log_channel import loggable
+from VenomX.utils.can_restrict import can_restrict
 
 # <=======================================================================================================>
 
@@ -158,7 +158,7 @@ async def member_has_joined(client, member: ChatMemberUpdated):
             temp.MELCOW[f"welcome-{chat_id}"] = await client.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
-                caption=f"**𝗛𝗲𝘆❗️{mention}, 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 {member.chat.title} 𝗚𝗿𝗼𝘂𝗽.**\n\n**➖➖➖➖➖➖➖➖➖➖➖➖**\n**𝗡𝗔𝗠𝗘 : {first_name}**\n**𝗜𝗗 : {user_id}**\n**𝗗𝗔𝗧𝗘 𝗝𝗢𝗜𝗡𝗘𝗗 : {joined_date}**",
+                caption=f"**ʜᴇʏ❗️{mention}, ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {member.chat.title} ɢʀᴏᴜᴘ.**\n\n**➖➖➖➖➖➖➖➖➖➖➖➖**\n**ɴᴀᴍᴇ : {first_name}**\n**ɪᴅ : {user_id}**\n**ᴅᴀᴛᴇ ᴊᴏɪɴᴇᴅ : {joined_date}**",
             )
         except Exception as e:
             print(e)
@@ -987,7 +987,7 @@ async def welcomemute(update: Update, context: ContextTypes.DEFAULT_TYPE) -> str
             )
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"#𝐖𝐄𝐋𝐂𝐎𝐌𝐄_𝐌𝐔𝐓𝐄\n"
+                f"#ᴡᴇʟᴄᴏᴍᴇ_ᴍᴜᴛᴇ\n"
                 f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
                 f"Has toggled welcome mute to <b>soft</b>."
             )
@@ -998,7 +998,7 @@ async def welcomemute(update: Update, context: ContextTypes.DEFAULT_TYPE) -> str
             )
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"#𝐖𝐄𝐋𝐂𝐎𝐌𝐄_𝐌𝐔𝐓𝐄\n"
+                f"#ᴡᴇʟᴄᴏᴍᴇ_ᴍᴜᴛᴇ\n"
                 f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
                 f"Has toggled welcome mute to <b>strong</b>."
             )
@@ -1044,7 +1044,7 @@ async def clean_welcome(update: Update, context: ContextTypes.DEFAULT_TYPE) -> s
         )
         return (
             f"<b>{html.escape(chat.title)}:</b>\n"
-            f"#𝐂𝐋𝐄𝐀𝐍_𝐖𝐄𝐋𝐂𝐎𝐌𝐄\n"
+            f"#ᴄʟᴇᴀɴ_ᴡᴇʟᴄᴏᴍᴇ\n"
             f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
             "Has toggled clean welcomes to <code>on</code>."
         )
@@ -1055,7 +1055,7 @@ async def clean_welcome(update: Update, context: ContextTypes.DEFAULT_TYPE) -> s
         )
         return (
             f"<b>{html.escape(chat.title)}:</b>\n"
-            f"#𝐂𝐋𝐄𝐀𝐍_𝐖𝐄𝐋𝐂𝐎𝐌𝐄\n"
+            f"#ᴄʟᴇᴀɴ_ᴡᴇʟᴄᴏᴍᴇ\n"
             f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
             "Has toggled clean welcomes to <code>off</code>."
         )
