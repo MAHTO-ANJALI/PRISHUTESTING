@@ -122,8 +122,8 @@ async def get_thumb(videoid):
             font4 = ImageFont.truetype('VenomX/assets/font2.ttf', 35)
 
             image4 = ImageDraw.Draw(image2)
-            image4.text((10, 10), "PRISHU MUSIC", fill="white", font = font1, align ="left") 
-            image4.text((670, 150), "PLAYING PRISHU", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
+            image4.text((10, 10), "ANJALI MUSIC", fill="white", font = font1, align ="left") 
+            image4.text((670, 150), "PLAYING ANJALI", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
 
             # title
             title1 = truncate(title)
