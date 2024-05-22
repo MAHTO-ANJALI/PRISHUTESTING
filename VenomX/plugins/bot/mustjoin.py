@@ -1,7 +1,8 @@
+
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
-from VenomX import app
+from SHUKLAMUSIC import app
 
 #--------------------------
 
@@ -22,11 +23,11 @@ async def must_join_channel(app: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://telegra.ph/file/eb054ff3c5c532ba7c0b2.jpg", caption=f"๏ ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ʏᴏᴜ'ᴠᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ [๏sᴜᴘᴘᴏʀᴛ๏]({link}) ʏᴇᴛ, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴜsᴇ ᴍᴇ ᴛʜᴇɴ ᴊᴏɪɴ [๏sᴜᴘᴘᴏʀᴛ๏]({link}) ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ᴀɢᴀɪɴ ! ",
+                    photo="https://telegra.ph/file/5a37d74a59f00043d64f9.jpg", caption=f"𝐎ʏʏ 𝐏ᴀʜᴀʟᴇ [🖤 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🖤]({link}) 𝐆ʀᴏᴜᴘ 𝐉ᴏɪɴ 𝐊ᴀʀ... 𝐀ᴜʀ [🖤 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 🖤]({link}) 𝐉ᴏɪɴ 𝐊ᴀʀɴᴇ 𝐊ᴇ 𝐁ᴀᴀᴅ 𝐇ɪ 𝐁ᴏᴛ 𝐒ᴛᴀʀᴛ 𝐇ᴏɢᴀ 😈 ",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("๏Jᴏɪɴ๏", url=link),
+                                InlineKeyboardButton("😈 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏 😈", url=link),
                             ]
                         ]
                     )
@@ -36,4 +37,3 @@ async def must_join_channel(app: Client, msg: Message):
                 pass
     except ChatAdminRequired:
         print(f"๏ᴘʀᴏᴍᴏᴛᴇ ᴍᴇ ᴀs ᴀɴ ᴀᴅᴍɪɴ ɪɴ ᴛʜᴇ ᴍᴜsᴛ_Jᴏɪɴ ᴄʜᴀᴛ ๏: {MUST_JOIN} !")
-      
